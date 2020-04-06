@@ -15,11 +15,11 @@
 		1E634569243B9A970068FF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E634567243B9A970068FF86 /* LaunchScreen.storyboard */; };
 		1E6345BE243B9B500068FF86 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6345BD243B9B500068FF86 /* IntentHandler.swift */; };
 		1E6345C5243B9B500068FF86 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E63457F243B9AED0068FF86 /* IntentsUI.framework */; };
-		1E6345C8243B9B500068FF86 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6345C7243B9B500068FF86 /* IntentViewController.swift */; };
-		1E6345CB243B9B500068FF86 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6345C9243B9B500068FF86 /* MainInterface.storyboard */; };
 		1E6345CF243B9B500068FF86 /* IntentExampleUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E6345C4243B9B500068FF86 /* IntentExampleUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1E6345D2243B9B500068FF86 /* IntentExample.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E6345BB243B9B500068FF86 /* IntentExample.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1E6345DA243B9B920068FF86 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1E6345D9243B9B920068FF86 /* Intents.intentdefinition */; };
+		1E6345DC243B9D890068FF86 /* SomaHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6345DB243B9D890068FF86 /* SomaHandler.swift */; };
+		1E6345DD243B9DB10068FF86 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1E6345D9243B9B920068FF86 /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +68,8 @@
 		1E6345BD243B9B500068FF86 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		1E6345BF243B9B500068FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E6345C4243B9B500068FF86 /* IntentExampleUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentExampleUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E6345C7243B9B500068FF86 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		1E6345CA243B9B500068FF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		1E6345CC243B9B500068FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E6345D9243B9B920068FF86 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		1E6345DB243B9D890068FF86 /* SomaHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomaHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 			children = (
 				1E63455B243B9A910068FF86 /* SiriKitExample */,
 				1E6345BC243B9B500068FF86 /* IntentExample */,
-				1E6345C6243B9B500068FF86 /* IntentExampleUI */,
 				1E63457E243B9AED0068FF86 /* Frameworks */,
 				1E63455A243B9A910068FF86 /* Products */,
 			);
@@ -147,20 +144,11 @@
 			isa = PBXGroup;
 			children = (
 				1E6345BD243B9B500068FF86 /* IntentHandler.swift */,
+				1E6345DB243B9D890068FF86 /* SomaHandler.swift */,
 				1E6345BF243B9B500068FF86 /* Info.plist */,
 				1E6345D9243B9B920068FF86 /* Intents.intentdefinition */,
 			);
 			path = IntentExample;
-			sourceTree = "<group>";
-		};
-		1E6345C6243B9B500068FF86 /* IntentExampleUI */ = {
-			isa = PBXGroup;
-			children = (
-				1E6345C7243B9B500068FF86 /* IntentViewController.swift */,
-				1E6345C9243B9B500068FF86 /* MainInterface.storyboard */,
-				1E6345CC243B9B500068FF86 /* Info.plist */,
-			);
-			path = IntentExampleUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +271,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E6345CB243B9B500068FF86 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +283,7 @@
 			files = (
 				1E634561243B9A910068FF86 /* ViewController.swift in Sources */,
 				1E63455D243B9A910068FF86 /* AppDelegate.swift in Sources */,
+				1E6345DD243B9DB10068FF86 /* Intents.intentdefinition in Sources */,
 				1E63455F243B9A910068FF86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +294,7 @@
 			files = (
 				1E6345DA243B9B920068FF86 /* Intents.intentdefinition in Sources */,
 				1E6345BE243B9B500068FF86 /* IntentHandler.swift in Sources */,
+				1E6345DC243B9D890068FF86 /* SomaHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E6345C8243B9B500068FF86 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,14 +335,6 @@
 				1E634568243B9A970068FF86 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		1E6345C9243B9B500068FF86 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E6345CA243B9B500068FF86 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

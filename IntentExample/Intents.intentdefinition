@@ -21,6 +21,8 @@
 			<string>generic</string>
 			<key>INIntentConfigurable</key>
 			<true/>
+			<key>INIntentDescription</key>
+			<string>Adiciona dois números</string>
 			<key>INIntentDescriptionID</key>
 			<string>9tluBV</string>
 			<key>INIntentLastParameterTag</key>
@@ -195,6 +197,14 @@
 				<key>INIntentResponseCodes</key>
 				<array>
 					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>${resultado}</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>GYTF2I</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>O resultado é ${resultado}</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>W9b7VD</string>
 						<key>INIntentResponseCodeName</key>
 						<string>success</string>
 						<key>INIntentResponseCodeSuccess</key>
@@ -221,6 +231,8 @@
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
 				<integer>2</integer>
+				<key>INIntentResponseOutput</key>
+				<string>resultado</string>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
